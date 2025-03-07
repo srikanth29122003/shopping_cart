@@ -265,3 +265,105 @@ transform: scale(1.1);
     height: 25px;
     width: 25px;
 }
+
+/*media query  */
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+  .nav {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .shop-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+
+  .cart {
+    width: 100%;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  h2.title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .shop-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .food-box {
+    padding: 8px;
+  }
+
+  .food-img {
+    height: 200px;
+  }
+
+  .cart {
+    width: 90%;
+  }
+
+  .cart-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-buy {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #cart-close {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+  .shop-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .food-title {
+    font-size: 0.9rem;
+  }
+
+  .food-price {
+    font-size: 0.8rem;
+  }
+
+  .add-cart {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  .cart-box {
+    grid-template-columns: 40% 50% 10%;
+  }
+
+  .cart-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-quantity {
+    width: 2rem;
+  }
+
+  .btn-buy {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
